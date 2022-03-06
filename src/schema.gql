@@ -1,0 +1,33 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type DataDto {
+  filteredItemList: [Item!]!
+  filters: [FilterDto!]!
+  pageCount: Float!
+  paginatedItemList: [Item!]!
+}
+
+type FilterDto {
+  count: Float!
+  name: String!
+  type: Float!
+  value: String!
+}
+
+type Item {
+  brand: String!
+  changepercent: Float!
+  color: String!
+  createddate: String!
+  id: Int!
+  imageurl: String!
+  name: String!
+  oldprice: Float!
+  price: Float!
+}
+
+type Query {
+  fetchData(brand: String!, color: String!, name: String!, page: String!): DataDto
+}

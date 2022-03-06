@@ -1,0 +1,17 @@
+{
+  "type": "postgres",
+  "host": "john.db.elephantsql.com",
+  "username": "epsuwzlu",
+  "password": "XkXL48B-BycrXmkyK5wDf5XVi_wO3dmI",
+  "database": "epsuwzlu",
+  "entities": [
+    "src/**/*.entity.{ts,js}"
+  ],
+  "migrationsTableName": "custom_migration_table",
+  "migrations": [
+    "migration/*.{ts,js}"
+  ],
+  "cli": {
+    "migrationsDir": "migration"
+  }
+}
